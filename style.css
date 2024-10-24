@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Agdasima", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-: white;
+  --primary1-: #216869;
+  --primary2-: black;
+  --fontprime: 2.3rem;
+  --para-font: 1.3rem;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+}
+.headback {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("./images/nature.avif");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75vh;
+}
+.container {
+  padding: 10px 10%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav i{
+  color: var(--primary-);
+}
+nav h1 {
+  font-size: 2.5rem;
+  color: var(--primary-);
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 1.3rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-);
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: var(--primary-);
+  transition: all 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.headtext {
+  margin-top: 15%;
+  color: var(--primary-);
+  animation: headmotion 1.5s linear 1 forwards normal;
+}
+.headtext h1 {
+  font-size: var(--fontprime);
+  margin-bottom: 15px;
+}
+.headtext h1 span {
+  font-size: 4.2rem;
+}
+.headtext p {
+  font-size: var(--para-font);
+  letter-spacing: 2px;
+}
+@keyframes headmotion {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.button {
+  margin-top: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button a {
+  text-decoration: none;
+  font-weight: 500;
+  background-color: var(--primary1-);
+  color: var(--primary-);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.button a i {
+  margin-right: 5px;
+}
+.button a:hover {
+  background-color: var(--primary-);
+  color: var(--primary1-);
+  transform: translateY(-3px);
+}
+
+/* ------------------------------------------about---------------------------------------- */
+
+.about {
+  width: 100%;
+  padding: 100px 0;
+}
+.abouttext {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.aboutcont {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+.aboutsub {
+  border: 1px solid var(--primary2-);
+  border-radius: 10px;
+  padding: 30px;
+  transition: all 0.5s ease;
+  animation: scrolleffect ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.aboutsub h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.aboutsub p {
+  font-size: var(--para-font);
+}
+.aboutsub h2 i {
+  margin-left: 3px;
+}
+.skill i {
+  font-size: 2rem;
+  margin-left: 40px;
+}
+.me p {
+  margin-top: 2rem;
+}
+.aboutsub:hover {
+  background-color: var(--primary1-);
+  color: var(--primary-);
+  transform: translateY(-10px);
+}
+
+@keyframes scrolleffect {
+  from {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.about .button {
+  margin-top: 4rem;
+}
+/* ------------------------------------------------Service---------------------------------- */
+
+.service {
+  width: 100%;
+  padding: 100px 0;
+}
+.servtext {
+  text-align: center;
+  font-size: 3rem;
+}
+.servcont {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+.subserv {
+  border: 1px solid var(--primary2-);
+  border-radius: 10px;
+  padding: 30px;
+  background: var(--primary-);
+  position: relative;
+}
+.subserv h2 {
+  text-align: center;
+}
+.subserv p {
+  font-size: var(--para-font);
+}
+.subserv i {
+  font-size: 2rem;
+}
+.subserv::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  background-color: var(--primary1-);
+  transition: all 0.5s;
+  transform: rotateZ(0);
+  z-index: -1;
+}
+.subserv:hover::before {
+  transform: rotateZ(12deg);
+}
+.service .button {
+  margin-top: 4rem;
+}
+
+/* ----------------------------------portfolio------------------------- */
+.portfolio {
+  width: 100%;
+  padding: 100px 0;
+}
+.porttext {
+  text-align: center;
+  font-size: 3rem;
+}
+.portcont {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  overflow: hidden;
+}
+.portsub {
+  border: 1px solid black;
+  padding: 20px 25px 10px 25px;
+  border-radius: 10px;
+  position: relative;
+}
+.imagepart img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+.textpart h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.textpart p {
+  font-size: var(--para-font);
+}
+.textpart {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(33, 104, 105, 0.8)
+  );
+  color: var(--primary-);
+  height: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  padding: 0 30px;
+  transition: all 0.5s ease;
+}
+.portsub a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 2rem;
+  font-size: var(--para-font);
+  font-weight: 500;
+  color: var(--primary-);
+  transition: all 0.5s ease;
+}
+.portsub a:hover {
+  transform: scale(1.1);
+}
+.portsub:hover img {
+  transform: scale(1.1);
+}
+.portsub:hover .textpart {
+  height: 100%;
+}
+
+/* -------------------------------------Contact-------------------------- */
+
+.contact {
+  width: 100%;
+  padding: 100px 0;
+}
+.contactarea {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.contactdet {
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: var(--para-font);
+    font-weight: 500;
+  }
+}
+.contactdet a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.contactdet i {
+  background-color: var(--primary1-);
+  color: var(--primary-);
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.5s ease;
+}
+.contactdet h3 i {
+  animation: iconmove 2s ease infinite normal;
+}
+.contactdet a i:hover {
+  background-color: var(--primary-);
+  color: var(--primary1-);
+  transform: translateY(-3px);
+}
+@keyframes iconmove {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+.formdet {
+  border: 1px solid black;
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./images/leaf.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+form {
+  margin-top: 1.7rem;
+}
+label {
+  display: inline-block;
+  font-size: var(--para-font);
+  margin-top: 10px;
+  color: var(--primary-);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: var(--para-font);
+}
+form input,
+textarea {
+  display: inline-block;
+  margin-top: 15px;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+.submit button {
+  background-color: var(--primary1-);
+  color: var(--primary-);
+  padding: 10px 20px;
+  font-size: var(--para-font);
+  margin-top: 1.5rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.submit button:hover {
+  background-color: var(--primary-);
+  color: var(--primary1-);
+  transform: translateY(-3px);
+}
+
+.submit button i {
+  margin-left: 3px;
+}

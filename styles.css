@@ -1,0 +1,148 @@
+nav .fas {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  nav.h1 {
+    font-size: 1.6rem;
+  }
+  .headback {
+    height: 100%;
+  }
+  .headtext {
+    margin-top: 60%;
+  }
+  .headtext h1 {
+    font-size: 1.7rem;
+  }
+  .headtext h1 span {
+    font-size: 2.5rem;
+  }
+  .headtext p {
+    font-size: 1rem;
+  }
+  .button a {
+    font-weight: 400;
+    margin-top: 4rem;
+    font-size: 1.1rem;
+  }
+  .about {
+    padding: 70px 0;
+  }
+  .aboutcont {
+    margin-top: 70px;
+  }
+  .abouttext {
+    font-size: 2.1rem;
+  }
+  .skill i {
+    font-size: 1.5rem;
+    margin-left: 25px;
+  }
+  .about .button {
+    margin-top: 2rem;
+  }
+  .service {
+    padding: 70px 0;
+  }
+  .servtext {
+    font-size: 2.1rem;
+  }
+  .subserv {
+    transition: all 0.5s ease;
+    animation: scrolleffect ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .subserv h2 {
+    margin-bottom: 10px;
+  }
+  .servcont {
+    margin-top: 70px;
+  }
+  .service .button {
+    margin-top: 2rem;
+  }
+  .subserv::before {
+    display: none;
+  }
+  .subserv.hover::before {
+    transform: none;
+  }
+  .portfolio {
+    padding: 70px 0;
+  }
+  .porttext {
+    font-size: 2.1rem;
+  }
+  .portcont {
+    margin-top: 70px;
+  }
+  .textpart {
+    height: 100%;
+    background: var(--primary-);
+    color: black;
+    position: static;
+    padding: 0px;
+  }
+  .textpart h2 {
+    margin-top: 2rem;
+  }
+  .portsub {
+    padding: 25px 25px 0px;
+  }
+  .contact {
+    padding: 0px 0;
+  }
+  .contactdet {
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(33, 104, 105, 0.8)
+    );
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 3;
+    transition: 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .textpart a{
+    color: var(--primary1-);
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+  .contactdet{
+    transition: all 0.5s ease;
+    animation: scrolleffect ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .formdet{
+    transition: all 0.5s ease;
+    animation: scrolleffect ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+}

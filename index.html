@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="headback">
+        <div class="container">
+          <nav>
+            <h1 class="logo">Portfolio.</h1>
+            <ul id="sidemenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="headtext">
+            <h1>Hello,I'am <br /><span>Radha krishnan</span></h1>
+            <p>
+              Driven Computer Science Engineer, specializing in coding and web
+              development to deliver creative and impactful solutions.
+            </p>
+          </div>
+          <div class="button">
+            <a href="./images/CV.pdf" download
+              ><i class="fa-solid fa-download"></i>Download CV
+            </a>
+            <a href="#about">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ------------------------------------------------About------------------------------------ -->
+    <section class="about">
+      <div class="container">
+        <div class="abouttext">
+          <h1 id="about">About</h1>
+        </div>
+        <div class="aboutcont">
+          <div class="aboutsub me">
+            <h2>ABOUT ME <i class="fa-solid fa-user"></i></h2>
+            <p>
+              I am <b>Radha Krishnan</b>, Computer Science Engineering student
+              with a passion for coding and web development. I thrive on
+              creating innovative solutions that blend creativity and technology
+              to make a positive impact.
+            </p>
+          </div>
+          <div class="aboutsub">
+            <h2>EDUCATION <i class="fa-solid fa-graduation-cap"></i></h2>
+            <p>
+              Completed Secondary Education <br />
+              <b>2020 - 2021</b><br />Completed Higher Secondary Education
+              <br />
+              <b>2022 - 2023</b> <br />Bachelor of Technology in Computer
+              Science Engineering <br />
+              <b>2023 - present</b>
+            </p>
+          </div>
+          <div class="aboutsub skill">
+            <h2>SKILLS & STRENGTH<i class="fa-solid fa-clipboard-list"></i></h2>
+            <p>
+              I have a solid grasp of technical skills, including Python, HTML,
+              CSS, and JavaScript. My strengths also include strong
+              problem-solving abilities and effective communication, enabling me
+              to collaborate well in team settings.
+            </p>
+            <br />
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+          </div>
+        </div>
+        <div class="button">
+          <a href="#social">Follow me</a>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------------------------------Service------------------------------------ -->
+    <section class="service">
+      <div class="container">
+        <div class="servtext">
+          <h1 id="service">SERVICES</h1>
+        </div>
+        <div class="servcont">
+          <div class="subserv">
+            <i class="fas fa-code"></i>
+            <h2>WEB DEVELOPMENT</h2>
+            <p>
+              Building robust and scalable websites using the latest
+              technologies. We ensure your site is responsive, fast, and easy to
+              navigate across all devices. Our team continuously adapts to new
+              trends, keeping your site ahead of the curve.
+            </p>
+          </div>
+          <div class="subserv">
+            <i class="fas fa-search"></i>
+            <h2>SEO Optimization</h2>
+            <p>
+              Improving your website's search engine rankings through effective
+              SEO techniques. We help drive organic traffic by optimizing
+              content and performance for better visibility. With regular
+              performance analysis, we ensure your site stays optimized.
+            </p>
+          </div>
+          <div class="subserv">
+            <i class="fas fa-cogs"></i>
+            <h2>Custom Web Solutions</h2>
+            <p>
+              Offering tailored web applications that meet your specific
+              business needs. Our custom solutions are designed to solve unique
+              challenges and improve operational efficiency. We provide ongoing
+              support to ensure long-term success and scalability.
+            </p>
+          </div>
+        </div>
+        <div class="button">
+          <a href="#contact"
+            ><i class="fa-solid fa-address-book"></i> Contact</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------Portfolio----------------------- -->
+    <section class="portfolio">
+      <div class="container">
+        <div class="porttext">
+          <h1 id="portfolio">PORTFOLIO</h1>
+        </div>
+        <div class="portcont">
+          <div class="portsub">
+            <div class="imagepart">
+              <img src="./images/cook3.jpg" alt="" />
+              <div class="textpart">
+                <h2>Restaurant Management</h2>
+                <p>
+                  A visually appealing restaurant website featuring a dynamic
+                  menu, chef profiles, and reservation options, optimized for
+                  both desktop and mobile devices.
+                </p>
+                <a href="#">Visit link <i class="fas fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portsub">
+            <div class="imagepart">
+              <img src="./images/Task manager.jpg" alt="" />
+              <div class="textpart">
+                <h2>Task Manager</h2>
+                <p>
+                  A functional task management tool that allows users to
+                  organize tasks with categories and priorities, while saving
+                  data using local storage for persistence.
+                </p>
+                <a href="#">Visit link <i class="fas fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portsub">
+            <div class="imagepart">
+              <img src="./images/weather.jpg" alt="" />
+              <div class="textpart">
+                <h2>Weather Dashboard</h2>
+                <p>
+                  A weather forecasting dashboard that fetches real-time data
+                  from an API, displaying temperature, humidity, and weather
+                  conditions based on the user's city input.
+                </p>
+                <a href="#">Visit link <i class="fas fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------Contact----------------------------------- -->
+    <section class="contact">
+      <div class="container">
+        <div class="contactarea">
+          <div class="contactdet">
+            <h1 id="contact">CONTACT</h1>
+            <h3><i class="fas fa-phone"></i> Call me:</h3>
+            <p>+919344269241</p>
+            <br />
+            <h3><i class="fas fa-envelope"></i> Mail me:</h3>
+            <p>radha472005@gmail.com</p>
+            <br />
+            <h3 id="social">Follow me on:</h3>
+            <a href="https://github.com/Radha-7git" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/radha-krishnan-4b1281330/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/7743rk/profilecard/?igsh=MWFld2lqd3FoMDVqcg=="
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://youtube.com/@rksk9210?si=Ayx5lYqV3GN0eFbn"
+              target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+          <div class="formdet">
+            <form name="submit-to-google-sheet">
+              <label for="myname">NAME</label>
+              <input
+                type="text"
+                name="Name"
+                id="myname"
+                placeholder="Your name"
+                required
+              />
+              <label for="mymail">E-MAIL</label>
+              <input
+                type="email"
+                name="Email"
+                id="mymail"
+                placeholder="mail-id"
+                required
+              />
+              <label for="description">MESSAGE</label>
+              <textarea
+                name="Message"
+                id="description"
+                placeholder="Your message"
+                rows="7"
+              ></textarea>
+            </form>
+            <div class="submit">
+              <button type="submit">
+                SEND <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
